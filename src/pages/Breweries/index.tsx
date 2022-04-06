@@ -15,7 +15,6 @@ import './styles.scss';
 
 const Breweries: React.FC = () => {
 
-  "Eu poderia fazer diferente também, inferindo o tipo na hora da chamada, exemplo: axios<Brewery[]>. Para isso eu precisaria mudar a implementação do Http.ts"
   const [breweries, setBreweries] = useState<Brewery[]>([]);
 
   useEffect(() => {
