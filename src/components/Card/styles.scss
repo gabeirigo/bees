@@ -1,0 +1,9 @@
+@import '../../variables';
+
+.card {
+  background: $cardBackground;
+  border: 1px solid $cardBorderColor;
+  border-radius: $radius;
+  padding: 1.5rem 1.2rem;
+  position: relative;
+}

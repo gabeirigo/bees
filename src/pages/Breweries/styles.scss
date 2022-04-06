@@ -1,0 +1,55 @@
+@import '../../variables';
+
+.breweries {
+  background: $baseBackground;
+  width: 100vw;
+
+  &__content {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 3rem 0;
+    width: 1440px;
+  }
+
+  &__card-title {
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+  }
+  
+  &__card-address {
+    line-height: 1.5rem;
+  }
+
+  &__card-badges-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  &__card-delete-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    &__content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1440px) {
+    &__content {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

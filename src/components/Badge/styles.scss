@@ -1,0 +1,15 @@
+@import '../../variables';
+
+.badge {
+  align-items: center;
+  background: $yellowBackground;  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: .3rem 1rem;
+  border-radius: 2rem;
+
+  &__label {
+    margin-left: .5rem;
+  }
+}

@@ -1,0 +1,38 @@
+@import '../../variables';
+
+.header {
+  background: $yellowBackground;
+  height: 4.5rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    width: 1440px;
+  }
+
+  &__back-button {
+    align-items: center;
+    display: flex;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  &__icon-back-button {
+    margin-right: .5rem;
+  }
+  
+  &__label-back-button {
+    font-size: 1.875rem;
+  }
+  
+  &__full-name {
+    font-weight: 400;
+    font-size: 1.875rem;
+  }
+}

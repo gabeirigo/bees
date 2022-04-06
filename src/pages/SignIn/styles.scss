@@ -1,0 +1,77 @@
+@import '../../variables';
+
+.signIn {
+  width: 100vw;
+  height: 100vh;
+  background: $yellowBackground;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__description {
+    line-height: 2rem;
+    font-size: .9rem;
+  }
+
+  &__input-name {
+    width: 100%;
+    margin: 1rem 0;
+    padding: .5rem .8rem;
+    line-height: 1.5rem;
+    border: 1px solid $inputBorderColor;
+    border-radius: $radius;
+    font-size: 1.05rem;
+  }
+
+  &__controllers {
+    width: 100%;
+    display: flex;
+    gap: 1.4rem;
+    margin-top: .5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__checkbox {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  &__enter-button {
+    padding: .6rem 1rem;
+    border: none;
+    border-radius: $radius;
+    background: $buttonBackground;
+    color: $buttonTextColor;
+    cursor: pointer;
+  }
+
+  &__enter-button:disabled {
+    background: $buttonBackgroundDisabled;
+    cursor: no-drop;
+  }
+  
+  &__bee {
+    position: absolute;
+    bottom: .5rem;
+    left: auto;
+    right: auto;
+    height: 8rem;
+  }
+
+  @media(min-width: 768px) {
+    &__bee {
+      bottom: .5rem;
+      left: .5rem;
+      height: 12rem;
+    }
+  }
+}
